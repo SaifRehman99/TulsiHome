@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+      <link rel="icon" href="img/favicon.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Tulsi Accounting</title>
+      <!-- Bootstrap
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+          -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="assets/styles/menu.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body class="loading">
+    <div id="overlay"></div>
+    <!--Overlay-->
+       
+
+    <!--============================== START of  Issue or Feedback Popup ===============================-->
+    <div id="Issue_Feedback_popup" class="Issue_Feedback_popup">
+         <div  class="close" onclick="close_button_popup('#Issue_Feedback_popup')" style="background: #e8eff3;
+    padding: 4px 10px;
+    position: fixed;
+    border-radius: 7%;
+    margin: 0.8%;"></div>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shrS3ROF0JDTqDUJL?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: #ffffff; border: 11px solid #74e6ab; height: 107%; border-style: double;"></iframe>  
+    </div>
+    <!--============================== END of Issue or Feedback Popup ===============================-->
+
+
+
+    <!--============================== START of  Issue or Feedback Popup ===============================-->
+    <div id="Contact_Sales_popup" class="Contact_Sales_popup">
+         <div  class="close" onclick="close_button_popup('#Contact_Sales_popup')" style="background: #e8eff3;
+    padding: 4px 10px;
+    position: fixed;
+    border-radius: 7%;
+    margin: 0.8%;"></div>
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrH0TRcNqxXXggc0?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="533" style="background: #ffffff; border: 11px solid #607d8b45; height: 107%; border-style: double;"></iframe>
+</div>
+    <!--============================== END of Issue or Feedback Popup ===============================-->
+
+
+
+<script>
+
+
+/*Issues & Feedback Popup configuration*/
+
+function Issue_Feedback_popup() {
+
+    $("#Issue_Feedback_popup").css('display', 'block');
+    $("#overlay").css('display', 'block');
+    $("body").css('overflow', 'hidden');
+
+    var box = document.getElementById('Issue_Feedback_popup');
+    var box1 = document.getElementById('overlay');
+
+    window.addEventListener('mouseup', function (Event) {
+        if (Event.target != box && Event.target.parentNode != box && Event.target.parentNode.parentNode != box && Event.target.parentNode.parentNode.parentNode != box && Event.target.parentNode.parentNode.parentNode.parentNode != box && Event.target === box1) {
+
+            box.style.display = "none";
+            box1.style.display = "none";
+            $("body").css('overflow', 'scroll');
+        }
+    });
+}
+
+
+function Issue_Feedback_popup_close() {
+    $(".Issue_Feedback_popup_close").click(function () {
+        $("#Issue_Feedback_popup").css('display', 'none');
+        $("#overlay").css('display', 'none');
+        $("body").css('overflow', 'scroll');
+    });
+}
+/*END of Issues & Feedback Popup configuration*/
+
+
+
+
+/*Issues & Feedback Popup configuration*/
+
+function Contact_Sales_popup() {
+
+    $("#Contact_Sales_popup").css('display', 'block');
+    $("#overlay").css('display', 'block');
+    $("body").css('overflow', 'hidden');
+
+    var box = document.getElementById('Contact_Sales_popup');
+    var box1 = document.getElementById('overlay');
+
+    window.addEventListener('mouseup', function (Event) {
+        if (Event.target != box && Event.target.parentNode != box && Event.target.parentNode.parentNode != box && Event.target.parentNode.parentNode.parentNode != box && Event.target.parentNode.parentNode.parentNode.parentNode != box && Event.target === box1) {
+
+            box.style.display = "none";
+            box1.style.display = "none";
+            $("body").css('overflow', 'scroll');
+        }
+    });
+}
+
+
+function Issue_Feedback_popup_close() {
+    $(".Contact_Sales_popup_close").click(function () {
+        $("#Contact_Sales_popup").css('display', 'none');
+        $("#overlay").css('display', 'none');
+        $("body").css('overflow', 'scroll');
+    });
+}
+/*END of Issues & Feedback Popup configuration*/
+
+
+
+
+
+</script>       
+       
+       
+       
+      <!--Fixed Header-->
+      <div class="menuDDtwo">
+         <a class="col-xs-6 col-md-4">
+         <img src="assets/images/logo.png" class="img-fluid" alt="logo"  href="#" >
+         </a>          
+         <div class="menuoptionsDD col-xs-12 col-sm-6 col-md-8">
+            <!--First option with extensive dropdown and a lot of options-->
+            <div class="menuDDtwo__link dropdown--mega">
+               <a href="#" class="">Industries &nbsp;<i class="fas fa-angle-down"></i></a>
+               <div class="megaDropDownWrap">
+                  <div class="megaDropDownWrap--inner">
+                     <!--START of  Right column section-->
+                     <div class="mega-column">
+                        <div class="mega-menu-block">
+                           <div class="title">For Farmers & Traders</div>
+                           <div class="IndusSelect">
+                              <a class="link" href="#">
+                                 <div class="icon">
+                                    <img src="assets/images/produceicon.png">
+                                 </div>
+                                 <div class="description">
+                                    <h4>Produce Processing</h4>
+                                    <span>Warehouse owners or operators who process, pack and ship fruit, vegitables, dry fruits etc; </span>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="IndusSelect">
+                              <a class="link" href="#">
+                                 <div class="icon">
+                                    <img src="assets/images/brokericon.png">
+                                 </div>
+                                 <div class="description">
+                                    <h4>Brokers & Agents</h4>
+                                    <span>Commisson agents facilitating trade between buyers and suppliers. </span>
+                                 </div>
+                              </a>
+                           </div>
+                           <!--Other half of the column with more options--> 
+                           <div class="title">For Recyclers & Makers </div>
+                           <div class="IndusSelect">
+                              <a class="link" href="#">
+                                 <div class="icon">
+                                    <img src="assets/images/recycleicon.png">
+                                 </div>
+                                 <div class="description">
+                                    <h4>Recycling</h4>
+                                    <span>Warehouse managers who buy consigments to recycle</span>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="IndusSelect">
+                              <a class="link" href="#">
+                                 <div class="icon">
+                                    <img src="assets/images/indusicon.png">
+                                 </div>
+                                 <div class="description">
+                                    <h4>Manufacturing</h4>
+                                    <span>Builders and creators small or big, manage there operations and sales</span>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="IndusSelect">
+                              <a class="link" href="#">
+                                 <div class="icon">
+                                    <img src="assets/images/inventoryicon.png">
+                                 </div>
+                                 <div class="description">
+                                    <h4>Distribution & Sales</h4>
+                                    <span>Anyone who sells goods online or offline</span>
+                                 </div>
+                              </a>
+                           </div>
+                           <br>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="link-white-paper">
+                     <a href="#">Do you perform multiple businesses together ?</a>
+                  </div>
+               </div>
+            </div>
+            <!--First option with extensive dropdown and a lot of options-->
+            <!--Pricing HREF Link Option-->
+            <div class="menuDDtwo__link">
+               <a target="_blank">Pricing</a>
+            </div>
+            <!--Pricing HREF Link Option-->
+            <!--Partners Page HREF Link Option-->
+            <div class="menuDDtwo__link">
+               <a target="_blank">Competition</a>
+            </div>
+            <!--Partners Pages HREF Link Option-->
+            <!--Support Helpdesk HREF Link Option-->
+            <div class="menuDDtwo__link">
+               <a target="_blank">Training & Support</a>
+            </div>
+            <!--Support Helpdesk HREF Link Option-->        
+            <!--Language Dropdown Option-->
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+               function googleTranslateElementInit() {
+                   new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ca,da,de,el,en,es,fr,it,ja,ko,nl,pl,pt,ru,sv,tl', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+               }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <!--Language Dropdown Option-->
+            <div class="menuDDbuttons__link" style="float:right;">
+               <a  class="Contact_Sales_popup_open" onclick="Contact_Sales_popup();" >
+                  <button class="loginbutton" style="border-left: 1px solid #dadada;">
+                     Contact Sales
+                     <!-- Btn-->
+                  </button>
+               </a>
+               <a target="_blank" >
+                  <button class="loginbutton">
+                     Log In
+                     <!-- Btn-->
+                  </button>
+               </a>
+               <a target="_blank" >
+                  <button class="button" style="font-weight: 700;border-radius: 4px; padding: 11px 23px; border: none; color: #fff; background: #2eb67e;">
+                     Start free trial
+                     <!-- Btn-->
+                  </button>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!---->
+      <!------->
+      <!--------->
+      <!--START of  MOBILE RESPONSIVE VIEW-->
+      <!----------->
+      <!-------->
+      <!---->
+      <div class="menuDDtwoMobile">
+         <!--Industries Section-->
+         <div class="mobile-menu-content-wrap">
+            <div class="mobile-main-menu-wrap">
+               <div class="title-products">
+                  Industries
+               </div>
+               <div class="mobile-main-menu">
+                  <div class="icons-wrap">
+                     <a href="#" class="link">
+                        <div class="icon-wrap">
+                           <div class="icon">
+                              <img src="assets/images/inventoryicon.png">
+                           </div>
+                           <div class="description">
+                              <h4>Decentralized Payments</h4>
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="link">
+                        <div class="icon-wrap">
+                           <div class="icon">
+                              <img src="assets/images/inventoryicon.png">
+                           </div>
+                           <div class="description">
+                              <h4>Decentralized Storage</h4>
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="link">
+                        <div class="icon-wrap">
+                           <div class="icon">
+                              <img src="assets/images/inventoryicon.png">
+                           </div>
+                           <div class="description">
+                              <h4>Decentralized Exchange DEX</h4>
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="link">
+                        <div class="icon-wrap">
+                           <div class="icon">
+                              <img src="assets/images/inventoryicon.png">
+                           </div>
+                           <div class="description">
+                              <h4>Escrow Services</h4>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="link-products">
+                  <a href="#">Pricing</a>
+               </div>
+            </div>
+            <div class="mobile-main-pages">
+               <div class="title">English</div>
+               <ul>
+                  <li><a href="#">Prices</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Careers</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--Fixed Header-->
+      <!--        Start of Banner Section-->
+      <section class="Recycling_banner box">
+         <div class="row">
+            <div class="col-md-6 col-md-push-6">
+               <img src="img/left-quote (1).png" style="width: 7%; opacity: 0.2;" />
+               <h1>Accounting Software built for your operations to help you <span id="spin"></span></h1>
+               <br>
+               <div class="box bannerBtns">
+                  <button class="Issue_Feedback_popup_open" onclick="Issue_Feedback_popup();" style="width: 279px;margin-right: 2%;" >Try Demo Account &nbsp; <i class="fas fa-arrow-right"></i></button>
+                  <a target="_blank"  class="play btns"><i>Get Started</i></a>
+               </div>
+               <br>
+               <br>
+               <p style="margin-top: 3%;">No credit card required. Cancel anytime.</p>
+               <div class="box subscribe">
+                  <div class="discount_banner">
+                  </div>
+               </div>
+            </div>
+                <div class="col-6" style="">
+
+                    <div class="workVideo box" style="background: #dfe4df; width: 103%; height: 87%; border-radius: 6px;">
+                        
+                      <iframe width="690" height="390" src="https://www.youtube.com/embed/BjroXdLRkHs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>                        
+
+                    </div>
+                </div>            
+            
+         </div>
+      </section>
+      
+      
+         <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-top: 56px; margin-bottom: 56px;">
+        <h1>One Tool, Many Uses</h1>
+        <p>From Recycling to Manaufactuing to Distribution to Sales, tulsi has got you covered.
+            <br> Select your business below to see how Tulsi can help you increase profits.</p>
+    </div>
+
+    <!--network token start-->
+    <section class="indussystem_section box" style="box-shadow: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 crypto" id="netLeft">
+                    <div class="right box" style="display: grid; grid-gap: 23px; grid-template-columns: repeat(10, 1fr); margin-top: 5px; margin-left: -43%;">
+                        <br>
+                        <a class="industrybtns">
+                            <img src="img/processing.png" class="ecofeatures_image" />
+                            <p class="hovbutton"><span>Recycling</span></p>
+                        </a>
+                        <br>
+                        <a class="industrybtns active">
+                            <img src="img/processing2.png" class="ecofeatures_image" />
+                            <p class="hovbutton"><span>Processing</span></p>
+                        </a>
+                        <br>
+                        <a class="industrybtns">
+                            <img src="img/manufacturing.png" class="ecofeatures_image" />
+                            <p class="hovbutton"><span>Manufacturing</span></p>
+                        </a>
+                        <br>
+                        <a class="industrybtns">
+                            <img src="img/inventory.png" class="ecofeatures_image" />
+                            <p class="hovbutton"><span>Distribution</span></p>
+                        </a>
+                        <br>
+                        <a class="industrybtns">
+                            <img src="img/sales.png" class="ecofeatures_image" />
+                            <p class="hovbutton"><span>Sales</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+      
+
+      <br>
+      <br>
+      <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-bottom: 56px; margin-top: 56px;">
+         <h1>Power up your <u>Processing Business</u></h1>
+         <p>From Recycling to Manaufactuing to Distribution to Sales, tulsi has got you covered.</p>
+      </div>
+      <div style="margin: 8%;">
+         <div class="tab" style="display: flex;border-bottom: 1px solid #dadada;">
+            <button class="tablinks" onclick="openCity(event, 'Purchases')" id="defaultOpen"><img src="img/purchasing.png" style="vertical-align: -22px; margin: 0% 4%; width: 67px; margin-bottom: 1%;">Purchases</button>
+            <button class="tablinks" onclick="openCity(event, 'WeightLogging')"><img src="img/packing.png" style="vertical-align: -21px; margin: 0% 2%; width: 62px;">Weight Logging</button>
+            <button class="tablinks" onclick="openCity(event, 'Inventory')"><img src="img/realtimeinvent.png" style="vertical-align: -14px;margin: 0% 4%;width: 46px;">Inventory</button>
+            <button class="tablinks" onclick="openCity(event, 'Shipping')"><img src="img/shipping.png" style="vertical-align: -21px; margin: 0% 4%; width: 60px;">Shipping</button>
+            <button class="tablinks" onclick="openCity(event, 'Reports')"><img src="img/gantt.png" style="vertical-align: -16px; margin: 0% 4%; width: 52px;">Reports</button>  
+         </div>
+         <div id="Purchases" class="tabcontent">
+            <section class="green_banner_area box" style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-8" id="netRight">
+                        <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
+                           <div class="wrap-two-up wrap-two-up-middle">
+                              <div class="content content-two-up">
+                                 <div class="open-dev-radar">
+                                    <div class="open-dev-badge"><img src="img/produce_step1.png" style="width: 45pc;margin-top: 21%;"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </div>                      
+                     <div class="col-sm-4 crypto" id="netLeft">
+                        <div class="right box">
+                           <h4 class="tulsi_app_badge"><b>Purchases</b></h4>
+                           <br>
+                           <h1 style="color:#333;">Deploy any purchasing methods</h1>
+                           <br>
+                           <p>Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div id="WeightLogging" class="tabcontent">
+            <!--Weight Logging Feature Steps 2-->
+            <section class="green_banner_area box"  style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-8" id="netRight">
+                        <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
+                           <div class="wrap-two-up wrap-two-up-middle">
+                              <div class="content content-two-up">
+                                 <div class="open-dev-radar">
+                                    <div class="open-dev-badge"><img src="img/produce_step2.png" style="width: 45pc;margin-top: 21%;"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </div>
+                     <div class="col-sm-4 crypto" id="netLeft">
+                        <div class="right box">
+                           <h4 class="tulsi_app_badge"><b>Weight Logging</b></h4>
+                           <br>
+                           <h1 style="color:#333;">Efficiently logging harvested everyday</h1>
+                           <br>
+                           <p>Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--Weight Logging Feature Steps 2-->
+         </div>
+         <div id="Inventory" class="tabcontent">
+            <!--Inventory Feature Steps 3-->
+            <section class="green_banner_area box" style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-8" id="netRight">
+                        <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
+                           <div class="wrap-two-up wrap-two-up-middle">
+                              <div class="content content-two-up">
+                                 <div class="open-dev-radar">
+                                    <div class="open-dev-badge"><img src="img/inventory_step3.png" style="width: 45pc;margin-top: 21%; "></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </div>                      
+                     <div class="col-sm-4 crypto" id="netLeft">
+                        <div class="right box">
+                           <h4 class="tulsi_app_badge"><b>Inventory</b></h4>
+                           <br>
+                           <h1 style="color:#333;">Manage stocks at granular levels</h1>
+                           <br>
+                           <p>Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--Inventory Feature Steps 3-->
+         </div>
+         <div id="Shipping" class="tabcontent">
+            <!--Shipping Feature Steps 4-->
+            <section class="green_banner_area box"  style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-8" id="netRight">
+                        <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
+                           <div class="wrap-two-up wrap-two-up-middle">
+                              <div class="content content-two-up">
+                                 <div class="open-dev-radar">
+                                    <div class="open-dev-badge"><img src="img/shipment_step4.png" style="width: 45pc;margin-top: 21%;"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </div>
+                     <div class="col-sm-4 crypto" id="netLeft">
+                        <div class="right box">
+                           <h4 class="tulsi_app_badge"><b>Shipping</b></h4>
+                           <br>
+                           <h1 style="color:#333;">Ship goods to your clients</h1>
+                           <br>
+                           <p>Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--Shipping Feature Steps 4-->
+         </div>
+         <div id="Reports" class="tabcontent">
+            <!--Report Feature Steps 5-->
+            <section class="green_banner_area box" style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-8" id="netRight">
+                        <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
+                           <div class="wrap-two-up wrap-two-up-middle">
+                              <div class="content content-two-up">
+                                 <div class="open-dev-radar">
+                                    <div class="open-dev-badge"><img src="img/reports_step5.png" style="width: 42pc;margin-top: 21%;"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </div>                      
+                     <div class="col-sm-4  crypto" id="netLeft">
+                        <div class="right box" >
+                           <h4 class="tulsi_app_badge"><b>Reporting</b></h4>
+                           <br>
+                           <h1 style="color:#333;">Analyse your business on new levels</h1>
+                           <br>
+                           <p>Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--Report Feature Steps 5-->
+         </div>
+      </div>
+      
+      
+      
+      
+           <!--        End of Banner Section-->
+      <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-top: 56px; margin-bottom: 56px;">
+         <h1><b style="border-bottom: 9px solid #fbcc3d; background: #fff8e2; padding: 0px 14px;">Data is gold</b>, Reports built by <u>data scientist</u></h1>
+      </div>
+      <!--network token start-->
+      <section class="ecosystem_section box" style="background: #fff;padding: 12px;">
+         <div class="container">
+            <div class="rowbanner" style="margin-left: -7px;">
+               <div class="col-md-6 crypto" id="netLeft">
+                  <div class="right box" style="display: grid; grid-gap: 13px; grid-template-columns: repeat(8, 1fr); margin-top: 5px; margin-bottom: 56px; ">
+                     <br>
+                     <a style="background: #fefefe; box-shadow: none; width: 252px;display: inherit; border: 1px solid #f3f3f3; border-radius: 7px;" >
+                        <img src="img/datastudio.png" style="float: left; width: 34%;"/><br>
+                        <h1>Google Data Studio</h1>
+                        <p style="font-size: 15px;">Google data studio to be able to visualise your own data analytics.</p>
+                     </a>
+                     <br>
+                     <a style="background: #fefefe; box-shadow: none; width: 252px;display: inherit; border: 1px solid #f3f3f3; border-radius: 7px;" >
+                        <img src="img/excel.png"  style="float: left; width: 34%;"/><br>
+                        <h1>Google Excel</h1>
+                        <p style="font-size: 15px;">Google excel for you to easily mix and match data sets.</p>
+                     </a>
+                     <br>
+                     <a style="background: #fefefe; box-shadow: none; width: 252px;display: inherit; border: 1px solid #f3f3f3; border-radius: 7px;" >
+                        <img src="img/mailchimp.png"  style="float: left; width: 34%;"/><br>
+                        <h1>MailChimp</h1>
+                        <p style="font-size: 15px;">Using your account send our emails to your .</p>
+                     </a>
+                     <br>
+                     <a style="background: #fefefe; box-shadow: none; width: 252px;display: inherit; border: 1px solid #f3f3f3; border-radius: 7px;" >
+                        <img src="img/zapier.png"  style="float: left; width: 34%;"/><br>
+                        <h1>Zapier</h1>
+                        <p style="font-size: 15px;">Create and manage your Bill of Materials and account.</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--network token end--> 
+      
+
+      <!--Download app banner area start-->
+      <section class="green_banner_area box" style="overflow: initial; color: #fff !important;border: 2px solid #e0e0e0;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 crypto" id="netLeft">
+                  <div class="right box">
+                     <h1>Always have your business data at your finger tips!</h1>
+                     <br>
+                     <p>No one stays in one place all day long and neither does tulsi. Seamlessly switch between your computer and your phone with the tulsi app. All the workflow management power you need, now in your everywhere.</p>
+                     <br><a href="https://chrome.google.com/webstore/detail/tulsi/ogghjghmeckcaghhonabimocjndnljkf?authuser=0&hl=en" target="_blank" class="btns"> <i class="fab fa-google-play"></i>&nbsp;&nbsp;Google play</a> &nbsp; &nbsp;
+                     <a href="https://chrome.google.com/webstore/detail/tulsi/ogghjghmeckcaghhonabimocjndnljkf?authuser=0&hl=en" target="_blank"  class="btns"><i class="fab fa-chrome"></i> &nbsp;Chrome Extension</a>
+                  </div>
+               </div>
+               <div class="col-md-6" id="netRight">
+                  <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
+                     <div class="wrap-two-up wrap-two-up-middle">
+                        <div class="content content-two-up">
+                           <div class="open-dev-radar">
+                              <div class="open-dev-badge"><img src="img/phoneico.png" style="width: 640px; "></div>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--Download app banner area end-->
+      <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-bottom: 56px;">
+         <h1>Stories from Producers & Traders</h1>
+         <p>Business owners and Tulsi-certified advsiors share their stories</p>
+      </div>
+      <!--network token start-->
+      
+      
+      
+      
+                            
+                   <!--Review 1-->
+                            <section class="green_banner_area box"  style="background: #fff; margin: 4% 0%; padding: 0%;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-6"  style="padding: 0%; width: 55%;">
+                                            <div class="right box" style="display: grid;">
+                                                                                
+                                                   <img src="img/left-quote (1).png" style="width: 11%;opacity: 0.6; margin: 10px 0px;" />
+                                               <h1 style="color: #c9c9c9;">We’ve used Tulsi from the early days to  <b style="color:#564d4d;">power the inventory control aspect of our website for B2B as well as B2C</b> to enable more seamless business operations.</h1>
+                                               <p>Dilip Shanghvi, Jewell Goph</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                                <div class="wrap-two-up wrap-two-up-middle">
+                                                            <div><img src="img/homepage-2020-testimonial-wanderlustandco.jpg"   style="width: 80%;background: #f0f0f0;padding: 0px 20px 19px 0px;"></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                   <!--Review 1-->
+
+                            
+                              
+                   <!--Review 2-->
+                            <section class="green_banner_area box" style="background: #fff; margin: 4% 0%; padding: 0%;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-6" style="margin-left: -9%;margin-right: 6%;">
+                                                    <div><img src="img/homepage-2020-testimonial-irelandcraftbeverages.jpg"   style="width: 80%;background: #f0f0f0;padding: 0px 0px 20px 20px;"></div>
+                                        </div>
+                                        <div class="col-xs-6"  style="padding: 0%; width: 55%;">
+                                            <div class="right box" style="display: grid;">
+                                                
+                                                   <img src="img/left-quote (1).png" style="width: 11%;opacity: 0.6; margin: 10px 0px;" />
+                                               <h1 style="color: #c9c9c9;">Five years in and I’d say that <b style="color:#564d4d;">Tulsi was our fourth employee, I don’t know what we’d do without it.</b></h1>
+                                               <p>Dilip Shanghvi, Jewell Goph</p>
+                                            </div>
+                                        </div>                                        
+                                        
+                                    </div>
+                                </div>
+                            </section>
+                   <!--Review 2-->
+
+
+
+
+                            
+                                
+                   <!--Review 3-->
+                            <section class="green_banner_area box" style="background: #fff; margin: 4% 0%; padding: 0%;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-6" style="padding: 0%; width: 55%;">
+                                            <div class="right box" style="display: grid;">
+                                                
+                                                   <img src="img/left-quote (1).png" style="width: 11%;opacity: 0.6; margin: 10px 0px;" />
+                                               <h1 style="color: #c9c9c9;"><b style="color:#564d4d;">Using apps that are trusted and recommended like Tulsi, Shopify and Xero,</b> really helps you look after your business, so you can grow.</h1>
+                                               <p>Dilip Shanghvi, Jewell Goph</p>
+                                            </div>
+                                        </div> 
+                                        
+                                        <div class="col-xs-6" id="netRight">
+                                                <div class="wrap-two-up wrap-two-up-middle">
+                                                    <div><img src="img/homepage-2020-testimonial-the5th.jpg"   style="width: 80%;background: #f0f0f0;padding: 0px 20px 19px 0px;"></div>
+                                                </div>
+                                        </div>                                        
+                                        
+                                    </div>
+                                </div>
+                            </section>
+                   <!--Review 3-->
+                            
+      
+      
+      
+      
+      
+      <!--  Team section End-->
+      <!--        Start of In News Section-->
+      <section class="inNews box inNewsBg">
+         <div class="container">
+            <div>
+               <h1><span class="circle"></span>See what other websites say about us</h1><br>
+               <a href="#">
+                  <img src="img/reviews.png" style="width: 100%;">
+               </a>
+            </div>
+         </div>
+      </section>
+      <!--        End of In News Section-->
+      <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-bottom: 56px;">
+         <h1>Your next stage of growth is just a click away</h1>
+         <p>Plans start from only $49 USD per month.</p>
+         <a target="_blank" ><button>Start free 30 day trial</button></a>
+      </div>
+      <img src="img/barcode_website_footer.png" style="width: 74%; margin: 1% 13%;"/>                             
+      <!--footer section start-->
+      <section class="footer box" style="z-index: -1;">
+         <div class="footerBg box">
+            <div class="container">
+               <div class="footerInner box">
+                  <div class="row">
+                     <div style="display: flex;">
+                        <div style="display: grid;
+                           grid-gap: 16px;
+                           grid-template-columns: repeat(3, 1fr);
+                           margin-top: 5px;
+                           margin-bottom: 56px;
+                           color:#fff;">
+                           <div class="col-lg-8 col-md-10" style="min-width: 217px;">
+                              <div class="donut_footer">
+                                 <h6><b>About Us</b></h6>
+                                 <br>
+                                 <ul>
+                                    <a target="_blank"><li>Help & Support</li></a>
+                                    <a target="_blank"><li>Terms of Service</li></a>
+                                    <a target="_blank"><li>Privacy Policy</li></a>
+                                    <a target="_blank"><li>New Product Updates</li></a>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-8 col-md-10"  style="min-width: 292px;">
+                              <div class="donut_footer">
+                                 <h6><b>Learning Center</b></h6>
+                                 <br>
+                                 <ul>
+                                    <a target="_blank"><li>Inventory Management Guide</li></a>
+                                    <a target="_blank"><li>Production Planning and Scheduling</li></a>
+                                    <a target="_blank"><li>Types of Manufacturing Processes</li></a>
+                                    <a target="_blank"><li>Master Production Schedule</li></a>
+                                    <a target="_blank"><li>D2C Manufacturing</li></a>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-8 col-md-10" style="max-width: 51%;">
+                           <div class="donut_footer">
+                              <p>Subscribe to our <u>Masters of Commerce</u> newsletter</p>
+                              
+                        
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{clear:left; width:100%;}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://space.us19.list-manage.com/subscribe/post?u=7a52e03d39baa4bc8be61f453&amp;id=0293eb135a" target="_blank" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll" style="display: flex; margin: 2% -1%;">
+	
+	<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Your email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7a52e03d39baa4bc8be61f453_0293eb135a" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-outline-secondary"></div>
+    </div>
+</form>                              
+
+                              <div class="community_members">
+                                 <p>Expertly curated commerce tips, news and insights to grow your business & delivered to your inbox. Unsubscribe at any time.</p>
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+
+<!--End mc_embed_signup-->                        
+                        
+                        
+                     </div>
+                     <div style="display: flex;">
+                        <div class="col-lg-8 col-md-12">
+                           <div class="right_donut">
+                              <p> <img style="vertical-align: middle; margin-left: -4%;" src="img/logo.png" class="img-fluid" alt="logo"><b></b> &nbsp;<span style="display: inline;margin-left: 8px;"><br></span>
+                                 <span style="display: block; line-height: 30px; font-size: 16px; color: #999;">Tusli India Private Limited (CIN U74990MH2009PTC194653)<br>© All Rights Reserved by Tulsi India Pvt Ltd.</span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="col-xs-6">
+                        <div class="social box" style="display: flex;padding: 4% 4%;">
+                           <a href="#"><i class="donut_icon fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="donut_icon fab fa-twitter"></i></a>
+                           <a href="#"><i class="donut_icon fab fa-youtube"></i></a>
+                           <a href="#"><i class="donut_icon fab fa-medium-m"></i></a>
+                           <a href="#"><i class="donut_icon fab fa-whatsapp-square"></i></a>
+                           <a href="#"><i class="donut_icon fab fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <div class='video'>
+        <iframe data-src="https://www.youtube.com/embed/BjroXdLRkHs?&theme=dark&autohide=1&modestbranding=1&fs=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" width="50%"></iframe>
+    </div>
+    <!--footer section End-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--  <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="js/fontawesome-all.min.js"></script>
+    <script src="assets/scripts/menu.min.js"></script>
+      <script>
+         var body = document.getElementsByTagName('body')[0];
+         var removeLoading = function() {
+             // In a production application you would remove the loading class when your
+             // application is initialized and ready to go.  Here we just artificially wait
+             // 3 seconds before removing the class.
+             setTimeout(function() {
+                 body.className = body.className.replace(/loading/, '');
+             }, 3000);
+         };
+         removeLoading();
+      </script>    
+      <script>
+         function openCity(evt, cityName) {
+           var i, tabcontent, tablinks;
+           tabcontent = document.getElementsByClassName("tabcontent");
+           for (i = 0; i < tabcontent.length; i++) {
+             tabcontent[i].style.display = "none";
+           }
+           tablinks = document.getElementsByClassName("tablinks");
+           for (i = 0; i < tablinks.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" active", "");
+           }
+           document.getElementById(cityName).style.display = "block";
+           evt.currentTarget.className += " active";
+         }
+         
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("defaultOpen").click();
+             
+      </script>
+      
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("netLeft");
+var btns = header.getElementsByClassName("industrybtns");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>      
+
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"7a52e03d39baa4bc8be61f453","lid":"0293eb135a","uniqueMethods":true}) })</script>
+      
+    <script src="js/custom.js?v=0.0.2"></script>
+    <script src="js/index.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>      
+   </body>
+</html>
