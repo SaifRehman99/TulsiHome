@@ -1,0 +1,462 @@
+@media(min-width:1091px) {
+    .header .navbar,
+    .maxww {
+        margin-left: -80px;
+    }
+}
+
+@media(max-width:1200px) {
+    .merchant .merbtns a {
+        margin: 8px 20px;
+    }
+    .merchant {
+        padding: 38px 0px 0px 170px;
+    }
+}
+
+@media(max-width:990px) {
+    .smart_contract .group_img {
+        background-size: 132% 100%;
+        padding: 0px 75px;
+    }
+    #video-bg {
+        display: none;
+    }
+    #video-bg-resp {
+        display: block;
+        width: 100%;
+    }
+    .cryptocurrency .video-container {
+        position: static;
+    }
+    .cryptocurrency {
+        padding: 0px 0;
+        margin-top: 0;
+        background-position-x: 0;
+    }
+    .cryptocurrency .video-container #video-bg-resp,
+    #video-fade-border {
+        display: block;
+    }
+    .cryptocurrency #rightCrypto {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin: 25px auto 75px;
+    }
+    #rightCrypto h1 {
+        font-size: 42px;
+        line-height: 38px;
+    }
+    #contact-us-btn {
+        margin-right: 0;
+    }
+    .banner .input-group {
+        width: 100%;
+    }
+    .banner .input-group .input-group-append .btn.btns {
+        width: 125px;
+    }
+    .smart_contract {
+        padding-bottom: 75px;
+    }
+    .HowItWorks .workDesc h1,
+    .HowItWorks .workDesc p {
+        margin-right: 0px;
+    }
+    .banner {
+        padding: 140px 0 20px;
+    }
+    .pointImg.item {
+        margin-top: 100px;
+    }
+    .competition {
+        padding: 0px 0px 0px;
+    }
+    .rightWh .img-fluid {
+        max-width: 100%;
+    }
+    .header #navbarSupportedContent {
+        display: none;
+    }
+    .inNews .news {
+        width: 33%;
+    }
+    p {
+        font-size: 18px !important;
+    }
+    .blob-buttons>div>p {
+        font-size: 12px !Important;
+    }
+}
+
+@media(max-width:768px) {
+    .smart_contract .container {
+        max-width: 100%;
+    }
+    .use_sdk .sdkInner {
+        padding: 0 0 30%;
+    }
+    .inNews .box {
+        margin: 0;
+    }
+    .inNews .news {
+        width: 50%;
+    }
+    .bounty #eco-img {
+        margin-left: 0px;
+    }
+    .bounty p {
+        padding: 0px;
+        font-size: 17px;
+    }
+    .competition {
+        padding: 0px 0px 0px;
+    }
+    #contact-us-btn {
+        margin-right: 0;
+    }
+    .whitepaper .rightWh img {
+        margin: 40px 0 0;
+        width: 80%;
+    }
+    #big .img-fluid {
+        max-width: 100%;
+    }
+    .btns {
+        width: 49% !important;
+        display: inline-block;
+        margin: 25px auto !important;
+    }
+    #checkoutfull-btn {
+        width: auto !important;
+    }
+    .img-fluid {
+        max-width: 100%;
+    }
+    .banner .input-group .input-group-append .btn.btns {
+        width: auto !important;
+        height: auto !important;
+        padding: 12px !important;
+        margin: 0 !important;
+    }
+    #open-dev {
+        margin-bottom: 350px;
+    }
+    .whitepaper h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .pointImg.item {
+        margin-top: 0px;
+    }
+}
+
+
+/* small mobile :320px. */
+
+@media (max-width: 767px) {
+    .social {
+        position: absolute;
+        bottom: initial;
+        margin-right: 0 !important;
+        left: 0;
+        margin-top: -20px !important;
+    }
+    #burger {
+        right: -39px;
+    }
+    .banner h1 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .landing_page .banner p {
+        font-size: 14px;
+        margin-left: 0px;
+        padding-right: 0;
+        text-align: center;
+    }
+    .landing_page .banner img {
+        margin-bottom: -48px;
+        margin-top: 60px;
+    }
+    .section.rewards ul.styled h4 {
+        font-size: 11px;
+    }
+    .calculator {
+        width: 95%;
+        margin-left: 10px;
+    }
+    .donut_footer h2 {
+        font-weight: 700;
+        margin-left: 8px;
+    }
+    .donut_footer p {
+        padding-top: 25px;
+        font-size: 15px;
+        margin-left: 8px;
+        line-height: 29px;
+    }
+    .right_donut p {
+        padding: 7px 0 0;
+        margin-left: 8px;
+    }
+    .service h4 {
+        font-weight: 700;
+        font-size: 11px;
+    }
+    .service p {
+        font-size: 12px !important;
+    }
+    .service {
+        min-height: 435px;
+    }
+    .themetitle span {
+        padding: 35px 44px;
+        text-align: center;
+        line-height: 33px;
+    }
+    .product .row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .product .col-sm-4,
+    .product .col-sm-8 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .section.products .product .title {
+        font-size: 12px;
+    }
+    .section.products .product .subtitle {
+        font-size: 10px;
+    }
+    .section.products .product .notify img {
+        margin-right: 10px;
+        width: 30px;
+    }
+    .section.products .product .notify p {
+        font-size: 8px;
+        line-height: 16px;
+    }
+    .section.products .product .notify p a {
+        padding-left: 0;
+        font-size: 9px;
+        display: inline-block;
+    }
+    .landing_page .section p {
+        font-size: 13px;
+        line-height: 21px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -18px;
+    }
+    .product.additional a.suggestion {
+        padding: 13px 5px;
+        font-size: 10px;
+    }
+    .section.promotion {
+        padding-top: 90px;
+    }
+    .section.sdivider {
+        margin-top: -165px;
+    }
+    .section.joinnow {
+        padding-top: 10px;
+    }
+    .main-menu ul li {
+        width: inherit;
+        padding: 0 0 10px !important;
+    }
+    .main-menu ul li a {
+        /* font-size: 10px; */
+        padding-left: 10px;
+    }
+    .merchant {
+        padding: 35px;
+    }
+    .footer {
+        margin-top: -35px;
+    }
+    .gist {
+        padding-top: 32px;
+        padding-bottom: 39px;
+        max-width: 520px;
+        max-height: 320px;
+    }
+    .gg {
+        max-width: 520px;
+        margin-top: -22px !important;
+    }
+    .smart_contract .group_img {
+        background-size: 99% 100%;
+        padding: 0px 75px;
+    }
+    .owl-carousel .owl-item img {
+        height: 21pc;
+        display: block;
+        width: auto;
+        margin: 0px auto;
+    }
+    #links {
+        right: 85px;
+        top: 60px;
+    }
+}
+
+@media (max-width: 660px) {
+    .calculator .rightfixed {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+    .smart_contract .group_img {
+        background-size: 96% 100%;
+    }
+    .network_token .right {
+        padding: 200px 0px 0px 0px !important;
+        padding: 60px 0px 0px 0px !important;
+    }
+    .gist {
+        max-height: 476px;
+    }
+}
+
+@media (max-width: 575px) {
+    .competition {
+        padding: 0px;
+    }
+    .smart_contract {
+        margin-top: 0;
+        padding-top: 25px;
+    }
+    .whitepaper .heading {
+        padding: 0 0 0px;
+    }
+    .roadmap {
+        padding: 15px 0 0px;
+    }
+    .partners {
+        margin-top: 15px;
+    }
+    .inNews .newsHead {
+        padding: 0 0 30px;
+    }
+    .ecoRanker {
+        padding: 10px 0 0px;
+    }
+    .HowItWorks .worksHead {
+        padding: 0 0 40px;
+    }
+    .HowItWorks {
+        padding: 10px 0 65px !important;
+    }
+    .nd3 {
+        padding-top: 50px !important;
+    }
+    .use_sdk .sdkInner {
+        padding: 0 0 50%;
+    }
+    .merchant {
+        padding: 35px 0 0;
+    }
+    .network_token {
+        margin-bottom: -70px;
+    }
+    .token_sale {
+        padding: 0px 0px 10px 0px;
+    }
+    .bounty {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .btns {
+        width: 150px;
+    }
+    .present-girl-img {
+        height: 225px;
+        left: -55px;
+        top: 195px;
+    }
+    .gist {
+        max-height: 210px;
+    }
+    .smart_contract .group_img {
+        padding: 0px 0px 0px 4px;
+    }
+    .banner p {
+        padding: 17px 0px 0px 0;
+    }
+    .heading h1 {
+        position: relative;
+        left: 20px;
+    }
+    .inNews .news {
+        width: 100%;
+    }
+    .features .heading h1 {
+        margin: 0 auto;
+        left: 0;
+        margin-bottom: 15px;
+        margin-top: -81px;
+        font-size: 18px;
+    }
+    .whitepaper .rightWh img {
+        width: 70%;
+    }
+    #links {
+        right: -70px;
+        margin: 0px auto;
+        width: 100%;
+    }
+    #links>ul {
+        clear: both;
+    }
+    .blob-buttons {
+        display: inline-block;
+        width: 100%;
+    }
+    .blob-buttons>div {
+        margin-top: 45px;
+        clear: both;
+    }
+    .social {
+        margin: 0;
+    }
+    #demos .demos__heading {
+        margin-bottom: 48px;
+    }
+    #demos .demos__heading .title {
+        white-space: nowrap;
+        font-size: 26px;
+    }
+    #demos .demos__close {
+        margin-right: 15px;
+        margin-top: 15px;
+        font-size: 24px;
+    }
+    #demos .demo__info {
+        margin: 25px auto 0;
+    }
+    #demos .demo__info .description {
+        padding-left: 0;
+    }
+    #demos .demo__info .title {
+        padding-left: 0;
+    }
+}
+
+@media(max-width:370px) {
+    .merchant h1 {
+        padding-bottom: 12px;
+    }
+    .use_sdk .sdkInner {
+        padding: 0 0 60%;
+    }
+    #links {
+        right: -30px;
+    }
+}
