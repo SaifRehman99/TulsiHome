@@ -6741,6 +6741,7 @@ button {
 
 .footer {
     padding: 40px 0;
+    height: 54vh;
 }
 
 .footer__title {
@@ -7023,7 +7024,7 @@ button {
     letter-spacing: 0px !important;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 830px) {
     .footer {
         height: 105vh
     }
