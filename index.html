@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
@@ -15,7 +16,6 @@
     <!-- Bootstrap
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
           -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" media="screen,projection">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen,projection" />
     <link href="css/hamburgers.css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" media="screen,projection" />
@@ -23,14 +23,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" media="screen,projection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" media="screen,projection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen,projection" />
-    <link href="assets/styles/menu.min.css" rel="stylesheet" media="screen,projection" />
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="assets/styles/menu.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
     <!-- Animate Css -->
-    <link rel="stylesheet" href="css/animate.css" media="screen,projection" />
-    <link href="css/style.css" rel="stylesheet" media="screen,projection" />
-    <link href="css/media.css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="css/responsive.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -274,7 +274,7 @@
     <!----------->
     <!-------->
     <!---->
-    <div class="menuDDtwoMobile">
+    <div class="menuDDtwoMobile d-none d-lg-block d-xl-block">
         <!--Industries Section-->
         <div class="mobile-menu-content-wrap">
             <div class="mobile-main-menu-wrap">
@@ -341,13 +341,146 @@
             </div>
         </div>
     </div>
+
+    <!-- /// mobile navbar start here  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-block d-md-none">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" class="img-fluid mobile_nav_img" alt="logo" href="#" />
+        </a>
+        <button data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <div class="menuDDtwo__link">
+                    <a href="#" data-toggle="collapse" data-target="#navbarIndustriesContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Industries &nbsp;<i class="fas fa-angle-down"></i></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarIndustriesContent">
+                    <div class="megaDropDownWrap--inner">
+                        <!--START of  Right column section-->
+                        <div class="mega-column">
+                            <div class="mega-menu-block">
+                                <div class="title">For Farmers & Traders</div>
+                                <div class="IndusSelect">
+                                    <a class="link" href="#">
+                                        <div class="icon">
+                                            <img src="assets/images/produceicon.png" />
+                                        </div>
+                                        <div class="description">
+                                            <h4>Produce Processing</h4>
+                                            <span>Warehouse owners or operators who process, pack and
+                    ship fruit, vegitables, dry fruits etc;
+                  </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="IndusSelect">
+                                    <a class="link" href="#">
+                                        <div class="icon">
+                                            <img src="assets/images/brokericon.png" />
+                                        </div>
+                                        <div class="description">
+                                            <h4>Brokers & Agents</h4>
+                                            <span>Commisson agents facilitating trade between buyers
+                    and suppliers.
+                  </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--Other half of the column with more options-->
+                                <div class="title">For Recyclers & Makers</div>
+                                <div class="IndusSelect">
+                                    <a class="link" href="#">
+                                        <div class="icon">
+                                            <img src="assets/images/recycleicon.png" />
+                                        </div>
+                                        <div class="description">
+                                            <h4>Recycling</h4>
+                                            <span>Warehouse managers who buy consigments to
+                    recycle</span
+                  >
+                </div>
+              </a>
+            </div>
+            <div class="IndusSelect">
+              <a class="link" href="#">
+                <div class="icon">
+                  <img src="assets/images/indusicon.png" />
+                </div>
+                <div class="description">
+                  <h4>Manufacturing</h4>
+                  <span
+                    >Builders and creators small or big, manage there
+                    operations and sales</span
+                  >
+                </div>
+              </a>
+            </div>
+            <div class="IndusSelect">
+              <a class="link" href="#">
+                <div class="icon">
+                  <img src="assets/images/inventoryicon.png" />
+                </div>
+                <div class="description">
+                  <h4>Distribution & Sales</h4>
+                  <span>Anyone who sells goods online or offline</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-white-paper">
+                        <a href="#">Do you perform multiple businesses together ?</a>
+                    </div>
+                </div>
+                <div class="menuDDtwo__link">
+                    <a href="pricing.html" target="_blank">Pricing</a>
+                </div>
+                <!--Pricing HREF Link Option-->
+                <!--Partners Page HREF Link Option-->
+                <div class="menuDDtwo__link">
+                    <a target="_blank">Competition</a>
+                </div>
+                <!--Partners Pages HREF Link Option-->
+                <!--Support Helpdesk HREF Link Option-->
+                <div class="menuDDtwo__link">
+                    <a target="_blank">Training & Support</a>
+                </div>
+                <!--Support Helpdesk HREF Link Option-->
+                <div class="menuDDbuttons__link" style="float:right;">
+                    <a class="Contact_Sales_popup_open" onclick="Contact_Sales_popup();">
+                        <button class="loginbutton">
+            Contact Sales
+            <!-- Btn-->
+          </button>
+                    </a>
+                    <a target="_blank">
+                        <button class="loginbutton">
+            Log In
+            <!-- Btn-->
+          </button>
+                    </a>
+                    <a target="_blank">
+                        <button class="button">
+            Start free trial
+            <!-- Btn-->
+          </button>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
     <!--Fixed Header-->
     <!--        Start of Banner Section-->
     <section class="Recycling_banner box">
         <div class="row">
-            <div class="col-md-6 col-md-push-6">
+            <div class="col-lg-6 col-12">
                 <img src="img/left-quote (1).png" style="width: 7%; opacity: 0.2;" />
-                <h1>
+                <h1 class="Recycling_banner_heading">
                     Accounting Software built for your operations to help you
                     <span id="spin"></span>
                 </h1>
@@ -367,13 +500,15 @@
                     <div class="discount_banner"></div>
                 </div>
             </div>
-            <div class="col-6" style="">
+            <div class="col-lg-6 col-12">
                 <div class="workVideo box" style="background: #dfe4df; width: 103%; height: 87%; border-radius: 6px;">
-                    <iframe width="690" height="390" src="https://www.youtube.com/embed/BjroXdLRkHs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="390" src="https://www.youtube.com/embed/BjroXdLRkHs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-top: 56px; margin-bottom: 56px;">
         <h1>One Tool, Many Uses</h1>
@@ -386,8 +521,8 @@
     <section class="indussystem_section box" style="box-shadow: none;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 crypto" id="netLeft">
-                    <div class="right box" style="display: grid; grid-gap: 23px; grid-template-columns: repeat(10, 1fr); margin-top: 5px; margin-left: -43%;">
+                <div class="col-md-6 col-12 crypto" id="netLeft">
+                    <div class="right box row indussystem_grid">
                         <br />
                         <a class="industrybtns">
                             <img src="img/processing.png" class="ecofeatures_image" />
@@ -418,7 +553,6 @@
             </div>
         </div>
     </section>
-
     <br />
     <br />
     <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-bottom: 56px; margin-top: 56px;">
@@ -428,7 +562,7 @@
         </p>
     </div>
     <div style="margin: 8%;">
-        <div class="tab" style="display: flex;border-bottom: 1px solid #dadada;">
+        <div class="tab tab_links_btns">
             <button class="tablinks" onclick="openCity(event, 'Purchases')" id="defaultOpen">
           <img
             src="img/purchasing.png"
@@ -470,7 +604,7 @@
                                     <div class="content content-two-up">
                                         <div class="open-dev-radar">
                                             <div class="open-dev-badge">
-                                                <img src="img/produce_step1.png" style="width: 45pc;" />
+                                                <img src="img/produce_step1.png" style="width: 45pc;" class="open-dev-badge_img" />
                                             </div>
                                         </div>
                                     </div>
@@ -503,7 +637,7 @@
                                     <div class="content content-two-up">
                                         <div class="open-dev-radar">
                                             <div class="open-dev-badge">
-                                                <img src="img/produce_step2.png" style="width: 45pc;" />
+                                                <img src="img/produce_step2.png" style="width: 45pc;" class="open-dev-badge_img" />
                                             </div>
                                         </div>
                                     </div>
@@ -534,12 +668,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8" id="netRight">
-                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
+                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;" class="open-dev-badge_img">
                                 <div class="wrap-two-up wrap-two-up-middle">
                                     <div class="content content-two-up">
                                         <div class="open-dev-radar">
                                             <div class="open-dev-badge">
-                                                <img src="img/inventory_step3.png" style="width: 45pc;" />
+                                                <img src="img/inventory_step3.png" style="width: 45pc;" class="open-dev-badge_img" />
                                             </div>
                                         </div>
                                     </div>
@@ -568,12 +702,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8" id="netRight">
-                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
+                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;" class="open-dev-badge_img">
                                 <div class="wrap-two-up wrap-two-up-middle">
                                     <div class="content content-two-up">
                                         <div class="open-dev-radar">
                                             <div class="open-dev-badge">
-                                                <img src="img/shipment_step4.png" style="width: 45pc;" />
+                                                <img src="img/shipment_step4.png" style="width: 45pc;" class="open-dev-badge_img" />
                                             </div>
                                         </div>
                                     </div>
@@ -607,7 +741,7 @@
                                     <div class="content content-two-up">
                                         <div class="open-dev-radar">
                                             <div class="open-dev-badge">
-                                                <img src="img/reports_step5.png" style="width: 42pc;" />
+                                                <img src="img/reports_step5.png" style="width: 42pc;" class="open-dev-badge_img" />
                                             </div>
                                         </div>
                                     </div>
@@ -637,7 +771,7 @@
     <!--        End of Banner Section-->
     <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-top: 56px; margin-bottom: 56px;">
         <h1>
-            <b style="border-bottom: 9px solid #fbcc3d; background: #fff8e2; padding: 0px 14px;">Data is gold</b
+            <b style="border-bottom: 9px solid #83827f; background: #fff8e2; padding: 0px 14px;">Data is gold</b
         >, Integration with our <u>platform partners.</u>
       </h1>
     </div>
@@ -650,8 +784,7 @@
         <div class="rowbanner" style="margin-left: -7px;">
           <div class="col-md-6 crypto" id="netLeft">
             <div
-              class="right box"
-              style="display: grid; grid-gap: 13px; grid-template-columns: repeat(8, 1fr); margin-top: 5px; margin-bottom: 56px; "
+              class="right box ecosystem_grid"
             >
               <br />
               <a
@@ -759,7 +892,7 @@
                 <div class="content content-two-up">
                   <div class="open-dev-radar">
                     <div class="open-dev-badge">
-                      <img src="img/phoneico.png" style="width: 640px; " />
+                      <img src="img/phoneico.png" class="download_app_banner_img" />
                     </div>
                   </div>
                 </div>
@@ -885,7 +1018,6 @@
       </div>
     </section>
     <!--Review 3-->
-
     <!--  Team section End-->
     <!--        Start of In News Section-->
     <section class="inNews box inNewsBg">
@@ -914,8 +1046,8 @@
       src="img/barcode_website_footer.png"
       style="width: 74%; margin: 1% 13%;"
     />
-     <!--footer section start-->
-     <section class="footer box" style="z-index: -1;">
+    <!--footer section start-->
+    <section class="footer box" style="z-index: -1;">
       <div class="footerBg box">
         <div class="container">
           <div class=" box">
@@ -1081,10 +1213,6 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
         width="50%"
       ></iframe>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--footer section End-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
