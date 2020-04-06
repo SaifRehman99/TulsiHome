@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
@@ -16,16 +17,36 @@
     <!-- Bootstrap
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
           -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen,projection" />
-    <link href="css/hamburgers.css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" media="screen,projection" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/hamburgers.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link href="assets/styles/menu.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <!-- Animate Css -->
     <link rel="stylesheet" href="css/animate.css" />
     <link href="css/style.css" rel="stylesheet" />
@@ -37,159 +58,192 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
-
-<body class="loading">
+  </head>
+  <body class="loading">
     <div id="overlay"></div>
     <!--Overlay-->
 
     <!--============================== START of  Issue or Feedback Popup ===============================-->
     <div id="Issue_Feedback_popup" class="Issue_Feedback_popup">
-        <div class="close" onclick="close_button_popup('#Issue_Feedback_popup')" style="background: #e8eff3;
+      <div
+        class="close"
+        onclick="close_button_popup('#Issue_Feedback_popup')"
+        style="background: #e8eff3;
     padding: 4px 10px;
     position: fixed;
     border-radius: 7%;
-    margin: 0.8%;"></div>
-        <iframe class="airtable-embed" src="https://airtable.com/embed/shrS3ROF0JDTqDUJL?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: #ffffff; border: 11px solid #74e6ab; height: 107%; border-style: double;"></iframe>
+    margin: 0.8%;"
+      ></div>
+      <iframe
+        class="airtable-embed"
+        src="https://airtable.com/embed/shrS3ROF0JDTqDUJL?backgroundColor=purple"
+        frameborder="0"
+        onmousewheel=""
+        width="100%"
+        height="533"
+        style="background: #ffffff; border: 11px solid #74e6ab; height: 107%; border-style: double;"
+      ></iframe>
     </div>
     <!--============================== END of Issue or Feedback Popup ===============================-->
 
     <!--============================== START of  Issue or Feedback Popup ===============================-->
     <div id="Contact_Sales_popup" class="Contact_Sales_popup">
-        <div class="close" onclick="close_button_popup('#Contact_Sales_popup')" style="background: #e8eff3;
+      <div
+        class="close"
+        onclick="close_button_popup('#Contact_Sales_popup')"
+        style="background: #e8eff3;
     padding: 4px 10px;
     position: fixed;
     border-radius: 7%;
-    margin: 0.8%;"></div>
-        <iframe class="airtable-embed" src="https://airtable.com/embed/shrH0TRcNqxXXggc0?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="533" style="background: #ffffff; border: 11px solid #607d8b45; height: 107%; border-style: double;"></iframe>
+    margin: 0.8%;"
+      ></div>
+      <iframe
+        class="airtable-embed"
+        src="https://airtable.com/embed/shrH0TRcNqxXXggc0?backgroundColor=green"
+        frameborder="0"
+        onmousewheel=""
+        width="100%"
+        height="533"
+        style="background: #ffffff; border: 11px solid #607d8b45; height: 107%; border-style: double;"
+      ></iframe>
     </div>
     <!--============================== END of Issue or Feedback Popup ===============================-->
 
     <script>
-        /*Issues & Feedback Popup configuration*/
+      /*Issues & Feedback Popup configuration*/
 
-        function Issue_Feedback_popup() {
-            $("#Issue_Feedback_popup").css("display", "block");
-            $("#overlay").css("display", "block");
-            $("body").css("overflow", "hidden");
+      function Issue_Feedback_popup() {
+        $("#Issue_Feedback_popup").css("display", "block");
+        $("#overlay").css("display", "block");
+        $("body").css("overflow", "hidden");
 
-            var box = document.getElementById("Issue_Feedback_popup");
-            var box1 = document.getElementById("overlay");
+        var box = document.getElementById("Issue_Feedback_popup");
+        var box1 = document.getElementById("overlay");
 
-            window.addEventListener("mouseup", function(Event) {
-                if (
-                    Event.target != box &&
-                    Event.target.parentNode != box &&
-                    Event.target.parentNode.parentNode != box &&
-                    Event.target.parentNode.parentNode.parentNode != box &&
-                    Event.target.parentNode.parentNode.parentNode.parentNode != box &&
-                    Event.target === box1
-                ) {
-                    box.style.display = "none";
-                    box1.style.display = "none";
-                    $("body").css("overflow", "scroll");
-                }
-            });
-        }
+        window.addEventListener("mouseup", function(Event) {
+          if (
+            Event.target != box &&
+            Event.target.parentNode != box &&
+            Event.target.parentNode.parentNode != box &&
+            Event.target.parentNode.parentNode.parentNode != box &&
+            Event.target.parentNode.parentNode.parentNode.parentNode != box &&
+            Event.target === box1
+          ) {
+            box.style.display = "none";
+            box1.style.display = "none";
+            $("body").css("overflow", "scroll");
+          }
+        });
+      }
 
-        function Issue_Feedback_popup_close() {
-            $(".Issue_Feedback_popup_close").click(function() {
-                $("#Issue_Feedback_popup").css("display", "none");
-                $("#overlay").css("display", "none");
-                $("body").css("overflow", "scroll");
-            });
-        }
-        /*END of Issues & Feedback Popup configuration*/
+      function Issue_Feedback_popup_close() {
+        $(".Issue_Feedback_popup_close").click(function() {
+          $("#Issue_Feedback_popup").css("display", "none");
+          $("#overlay").css("display", "none");
+          $("body").css("overflow", "scroll");
+        });
+      }
+      /*END of Issues & Feedback Popup configuration*/
 
-        /*Issues & Feedback Popup configuration*/
+      /*Issues & Feedback Popup configuration*/
 
-        function Contact_Sales_popup() {
-            $("#Contact_Sales_popup").css("display", "block");
-            $("#overlay").css("display", "block");
-            $("body").css("overflow", "hidden");
+      function Contact_Sales_popup() {
+        $("#Contact_Sales_popup").css("display", "block");
+        $("#overlay").css("display", "block");
+        $("body").css("overflow", "hidden");
 
-            var box = document.getElementById("Contact_Sales_popup");
-            var box1 = document.getElementById("overlay");
+        var box = document.getElementById("Contact_Sales_popup");
+        var box1 = document.getElementById("overlay");
 
-            window.addEventListener("mouseup", function(Event) {
-                if (
-                    Event.target != box &&
-                    Event.target.parentNode != box &&
-                    Event.target.parentNode.parentNode != box &&
-                    Event.target.parentNode.parentNode.parentNode != box &&
-                    Event.target.parentNode.parentNode.parentNode.parentNode != box &&
-                    Event.target === box1
-                ) {
-                    box.style.display = "none";
-                    box1.style.display = "none";
-                    $("body").css("overflow", "scroll");
-                }
-            });
-        }
+        window.addEventListener("mouseup", function(Event) {
+          if (
+            Event.target != box &&
+            Event.target.parentNode != box &&
+            Event.target.parentNode.parentNode != box &&
+            Event.target.parentNode.parentNode.parentNode != box &&
+            Event.target.parentNode.parentNode.parentNode.parentNode != box &&
+            Event.target === box1
+          ) {
+            box.style.display = "none";
+            box1.style.display = "none";
+            $("body").css("overflow", "scroll");
+          }
+        });
+      }
 
-        function Issue_Feedback_popup_close() {
-            $(".Contact_Sales_popup_close").click(function() {
-                $("#Contact_Sales_popup").css("display", "none");
-                $("#overlay").css("display", "none");
-                $("body").css("overflow", "scroll");
-            });
-        }
-        /*END of Issues & Feedback Popup configuration*/
+      function Issue_Feedback_popup_close() {
+        $(".Contact_Sales_popup_close").click(function() {
+          $("#Contact_Sales_popup").css("display", "none");
+          $("#overlay").css("display", "none");
+          $("body").css("overflow", "scroll");
+        });
+      }
+      /*END of Issues & Feedback Popup configuration*/
     </script>
 
     <!--Fixed Header-->
     <div class="menuDDtwo">
-        <a class="col-xs-6 col-md-4">
-            <img src="assets/images/logo.png" class="img-fluid" alt="logo" href="#" />
-        </a>
-        <div class="menuoptionsDD col-xs-12 col-sm-6 col-md-8">
-            <!--First option with extensive dropdown and a lot of options-->
+      <a class="col-xs-6 col-md-4">
+        <img
+          src="assets/images/logo.png"
+          class="img-fluid"
+          alt="logo"
+          href="#"
+        />
+      </a>
+      <div
+        class="menuoptionsDD col-xs-12 col-sm-6 col-md-8">
+        <!--First option with extensive dropdown and a lot of options-->
 
-            <div class="menuDDtwo__link dropdown--mega">
-                <a href="#" class="">Industries &nbsp;<i class="fas fa-angle-down"></i
+        <div class="menuDDtwo__link dropdown--mega">
+          <a href="#" class=""
+            >Industries &nbsp;<i class="fas fa-angle-down"></i
           ></a>
-                <div class="megaDropDownWrap">
-                    <div class="megaDropDownWrap--inner">
-                        <!--START of  Right column section-->
-                        <div class="mega-column">
-                            <div class="mega-menu-block">
-                                <div class="title">For Farmers & Traders</div>
-                                <div class="IndusSelect">
-                                    <a class="link" href="#">
-                                        <div class="icon">
-                                            <img src="assets/images/produceicon.png" />
-                                        </div>
-                                        <div class="description">
-                                            <h4>Produce Processing</h4>
-                                            <span>Warehouse owners or operators who process, pack and
+          <div class="megaDropDownWrap">
+            <div class="megaDropDownWrap--inner">
+              <!--START of  Right column section-->
+              <div class="mega-column">
+                <div class="mega-menu-block">
+                  <div class="title">For Farmers & Traders</div>
+                  <div class="IndusSelect">
+                    <a class="link" href="#">
+                      <div class="icon">
+                        <img src="assets/images/produceicon.png" />
+                      </div>
+                      <div class="description">
+                        <h4>Produce Processing</h4>
+                        <span
+                          >Warehouse owners or operators who process, pack and
                           ship fruit, vegitables, dry fruits etc;
                         </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="IndusSelect">
-                                    <a class="link" href="#">
-                                        <div class="icon">
-                                            <img src="assets/images/brokericon.png" />
-                                        </div>
-                                        <div class="description">
-                                            <h4>Brokers & Agents</h4>
-                                            <span>Commisson agents facilitating trade between buyers
+                      </div>
+                    </a>
+                  </div>
+                  <div class="IndusSelect">
+                    <a class="link" href="#">
+                      <div class="icon">
+                        <img src="assets/images/brokericon.png" />
+                      </div>
+                      <div class="description">
+                        <h4>Brokers & Agents</h4>
+                        <span
+                          >Commisson agents facilitating trade between buyers
                           and suppliers.
                         </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!--Other half of the column with more options-->
-                                <div class="title">For Recyclers & Makers</div>
-                                <div class="IndusSelect">
-                                    <a class="link" href="#">
-                                        <div class="icon">
-                                            <img src="assets/images/recycleicon.png" />
-                                        </div>
-                                        <div class="description">
-                                            <h4>Recycling</h4>
-                                            <span>Warehouse managers who buy consigments to
+                      </div>
+                    </a>
+                  </div>
+                  <!--Other half of the column with more options-->
+                  <div class="title">For Recyclers & Makers</div>
+                  <div class="IndusSelect">
+                    <a class="link" href="#">
+                      <div class="icon">
+                        <img src="assets/images/recycleicon.png" />
+                      </div>
+                      <div class="description">
+                        <h4>Recycling</h4>
+                        <span
+                          >Warehouse managers who buy consigments to
                           recycle</span
                         >
                       </div>
@@ -217,55 +271,58 @@
                       <div class="description">
                         <h4>Distribution & Sales</h4>
                         <span>Anyone who sells goods online or offline</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <br />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="link-white-paper">
-                        <a href="#">Do you perform multiple businesses together ?</a>
-                    </div>
+                      </div>
+                    </a>
+                  </div>
+                  <br />
                 </div>
+              </div>
             </div>
-            <!--First option with extensive dropdown and a lot of options-->
-            <!--Pricing HREF Link Option-->
-            <div class="menuDDtwo__link">
-                <a href="pricing.html" target="_blank">Pricing</a>
+            <div class="link-white-paper">
+              <a href="#">Do you perform multiple businesses together ?</a>
             </div>
-            <!--Pricing HREF Link Option-->
-            <!--Partners Page HREF Link Option-->
-            <div class="menuDDtwo__link">
-                <a target="_blank">Competition</a>
-            </div>
-            <!--Partners Pages HREF Link Option-->
-            <!--Support Helpdesk HREF Link Option-->
-            <div class="menuDDtwo__link">
-                <a target="_blank">Training & Support</a>
-            </div>
-            <!--Support Helpdesk HREF Link Option-->
-            <div class="menuDDbuttons__link" style="float:right;">
-                <a class="Contact_Sales_popup_open" onclick="Contact_Sales_popup();">
-                    <button class="loginbutton" style="border-left: 1px solid #dadada;">
+          </div>
+        </div>
+        <!--First option with extensive dropdown and a lot of options-->
+        <!--Pricing HREF Link Option-->
+        <div class="menuDDtwo__link">
+          <a href="pricing.html" target="_blank">Pricing</a>
+        </div>
+        <!--Pricing HREF Link Option-->
+        <!--Partners Page HREF Link Option-->
+        <div class="menuDDtwo__link">
+          <a target="_blank">Competition</a>
+        </div>
+        <!--Partners Pages HREF Link Option-->
+        <!--Support Helpdesk HREF Link Option-->
+        <div class="menuDDtwo__link">
+          <a target="_blank">Training & Support</a>
+        </div>
+        <!--Support Helpdesk HREF Link Option-->
+        <div class="menuDDbuttons__link" style="float:right;">
+          <a class="Contact_Sales_popup_open" onclick="Contact_Sales_popup();">
+            <button class="loginbutton" style="border-left: 1px solid #dadada;">
               Contact Sales
               <!-- Btn-->
             </button>
-                </a>
-                <a target="_blank">
-                    <button class="loginbutton">
+          </a>
+          <a target="_blank">
+            <button class="loginbutton">
               Log In
               <!-- Btn-->
             </button>
-                </a>
-                <a target="_blank">
-                    <button class="button" style="font-weight: 700;border-radius: 4px; padding: 11px 23px; border: none; color: #fff; background: #2eb67e;">
+          </a>
+          <a target="_blank">
+            <button
+              class="button"
+              style="font-weight: 700;border-radius: 4px; padding: 11px 23px; border: none; color: #fff; background: #2eb67e;"
+            >
               Start free trial
               <!-- Btn-->
             </button>
-                </a>
-            </div>
+          </a>
         </div>
+      </div>
     </div>
     <!---->
     <!------->
@@ -275,129 +332,144 @@
     <!-------->
     <!---->
     <div class="menuDDtwoMobile d-none d-lg-block d-xl-block">
-        <!--Industries Section-->
-        <div class="mobile-menu-content-wrap">
-            <div class="mobile-main-menu-wrap">
-                <div class="title-products">
-                    Industries
+      <!--Industries Section-->
+      <div class="mobile-menu-content-wrap">
+        <div class="mobile-main-menu-wrap">
+          <div class="title-products">
+            Industries
+          </div>
+          <div class="mobile-main-menu">
+            <div class="icons-wrap">
+              <a href="#" class="link">
+                <div class="icon-wrap">
+                  <div class="icon">
+                    <img src="assets/images/inventoryicon.png" />
+                  </div>
+                  <div class="description">
+                    <h4>Decentralized Payments</h4>
+                  </div>
                 </div>
-                <div class="mobile-main-menu">
-                    <div class="icons-wrap">
-                        <a href="#" class="link">
-                            <div class="icon-wrap">
-                                <div class="icon">
-                                    <img src="assets/images/inventoryicon.png" />
-                                </div>
-                                <div class="description">
-                                    <h4>Decentralized Payments</h4>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="link">
-                            <div class="icon-wrap">
-                                <div class="icon">
-                                    <img src="assets/images/inventoryicon.png" />
-                                </div>
-                                <div class="description">
-                                    <h4>Decentralized Storage</h4>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="link">
-                            <div class="icon-wrap">
-                                <div class="icon">
-                                    <img src="assets/images/inventoryicon.png" />
-                                </div>
-                                <div class="description">
-                                    <h4>Decentralized Exchange DEX</h4>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="link">
-                            <div class="icon-wrap">
-                                <div class="icon">
-                                    <img src="assets/images/inventoryicon.png" />
-                                </div>
-                                <div class="description">
-                                    <h4>Escrow Services</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+              </a>
+              <a href="#" class="link">
+                <div class="icon-wrap">
+                  <div class="icon">
+                    <img src="assets/images/inventoryicon.png" />
+                  </div>
+                  <div class="description">
+                    <h4>Decentralized Storage</h4>
+                  </div>
                 </div>
-                <div class="link-products">
-                    <a href="#">Pricing</a>
+              </a>
+              <a href="#" class="link">
+                <div class="icon-wrap">
+                  <div class="icon">
+                    <img src="assets/images/inventoryicon.png" />
+                  </div>
+                  <div class="description">
+                    <h4>Decentralized Exchange DEX</h4>
+                  </div>
                 </div>
+              </a>
+              <a href="#" class="link">
+                <div class="icon-wrap">
+                  <div class="icon">
+                    <img src="assets/images/inventoryicon.png" />
+                  </div>
+                  <div class="description">
+                    <h4>Escrow Services</h4>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div class="mobile-main-pages">
-                <div class="title">English</div>
-                <ul>
-                    <li><a href="#">Prices</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
+          </div>
+          <div class="link-products">
+            <a href="#">Pricing</a>
+          </div>
         </div>
+        <div class="mobile-main-pages">
+          <div class="title">English</div>
+          <ul>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- /// mobile navbar start here  -->
+<!-- /// mobile navbar start here  -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light d-block d-md-none">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.png" class="img-fluid mobile_nav_img" alt="logo" href="#" />
-        </a>
-        <button data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-block d-xl-none">
+  <div class="row justify-content-between">
+    <div class="col">
+  <a class="navbar-brand" href="#">
+    <img
+          src="assets/images/logo.png"
+          class="img-fluid mobile_nav_img"
+          alt="logo"
+          href="#"
+        />
+  </a>
+    </div>
+    <div class="col" >
+  <button style="float:right;"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <div class="menuDDtwo__link">
-                    <a href="#" data-toggle="collapse" data-target="#navbarIndustriesContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Industries &nbsp;<i class="fas fa-angle-down"></i></a>
+    </div>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <div class="menuDDtwo__link">
+      <a href="#"  data-toggle="collapse" data-target="#navbarIndustriesContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      >Industries &nbsp;<i class="fas fa-angle-down"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarIndustriesContent">
+      <div class="megaDropDownWrap--inner">
+        <!--START of  Right column section-->
+        <div class="mega-column">
+          <div class="mega-menu-block">
+            <div class="title">For Farmers & Traders</div>
+            <div class="IndusSelect">
+              <a class="link" href="#">
+                <div class="icon">
+                  <img src="assets/images/produceicon.png" />
                 </div>
-                <div class="collapse navbar-collapse" id="navbarIndustriesContent">
-                    <div class="megaDropDownWrap--inner">
-                        <!--START of  Right column section-->
-                        <div class="mega-column">
-                            <div class="mega-menu-block">
-                                <div class="title">For Farmers & Traders</div>
-                                <div class="IndusSelect">
-                                    <a class="link" href="#">
-                                        <div class="icon">
-                                            <img src="assets/images/produceicon.png" />
-                                        </div>
-                                        <div class="description">
-                                            <h4>Produce Processing</h4>
-                                            <span>Warehouse owners or operators who process, pack and
+                <div class="description">
+                  <h4>Produce Processing</h4>
+                  <span
+                    >Warehouse owners or operators who process, pack and
                     ship fruit, vegitables, dry fruits etc;
                   </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="IndusSelect">
-                                    <a class="link" href="#">
-                                        <div class="icon">
-                                            <img src="assets/images/brokericon.png" />
-                                        </div>
-                                        <div class="description">
-                                            <h4>Brokers & Agents</h4>
-                                            <span>Commisson agents facilitating trade between buyers
+                </div>
+              </a>
+            </div>
+            <div class="IndusSelect">
+              <a class="link" href="#">
+                <div class="icon">
+                  <img src="assets/images/brokericon.png" />
+                </div>
+                <div class="description">
+                  <h4>Brokers & Agents</h4>
+                  <span
+                    >Commisson agents facilitating trade between buyers
                     and suppliers.
                   </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!--Other half of the column with more options-->
-                                <div class="title">For Recyclers & Makers</div>
-                                <div class="IndusSelect">
-                                    <a class="link" href="#">
-                                        <div class="icon">
-                                            <img src="assets/images/recycleicon.png" />
-                                        </div>
-                                        <div class="description">
-                                            <h4>Recycling</h4>
-                                            <span>Warehouse managers who buy consigments to
+                </div>
+              </a>
+            </div>
+            <!--Other half of the column with more options-->
+            <div class="title">For Recyclers & Makers</div>
+            <div class="IndusSelect">
+              <a class="link" href="#">
+                <div class="icon">
+                  <img src="assets/images/recycleicon.png" />
+                </div>
+                <div class="description">
+                  <h4>Recycling</h4>
+                  <span
+                    >Warehouse managers who buy consigments to
                     recycle</span
                   >
                 </div>
@@ -425,353 +497,462 @@
                 <div class="description">
                   <h4>Distribution & Sales</h4>
                   <span>Anyone who sells goods online or offline</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <br />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="link-white-paper">
-                        <a href="#">Do you perform multiple businesses together ?</a>
-                    </div>
                 </div>
-                <div class="menuDDtwo__link">
-                    <a href="pricing.html" target="_blank">Pricing</a>
-                </div>
-                <!--Pricing HREF Link Option-->
-                <!--Partners Page HREF Link Option-->
-                <div class="menuDDtwo__link">
-                    <a target="_blank">Competition</a>
-                </div>
-                <!--Partners Pages HREF Link Option-->
-                <!--Support Helpdesk HREF Link Option-->
-                <div class="menuDDtwo__link">
-                    <a target="_blank">Training & Support</a>
-                </div>
-                <!--Support Helpdesk HREF Link Option-->
-                <div class="menuDDbuttons__link" style="float:right;">
-                    <a class="Contact_Sales_popup_open" onclick="Contact_Sales_popup();">
-                        <button class="loginbutton">
+              </a>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="link-white-paper">
+        <a href="#">Do you perform multiple businesses together ?</a>
+      </div>
+    </div>
+      <div class="menuDDtwo__link">
+        <a href="pricing.html" target="_blank">Pricing</a>
+      </div>
+      <!--Pricing HREF Link Option-->
+      <!--Partners Page HREF Link Option-->
+      <div class="menuDDtwo__link">
+        <a target="_blank">Competition</a>
+      </div>
+      <!--Partners Pages HREF Link Option-->
+      <!--Support Helpdesk HREF Link Option-->
+      <div class="menuDDtwo__link">
+        <a target="_blank">Training & Support</a>
+      </div>
+      <!--Support Helpdesk HREF Link Option-->
+      <div class="menuDDbuttons__link" style="float:right;">
+        <a class="Contact_Sales_popup_open" onclick="Contact_Sales_popup();">
+          <button class="loginbutton" >
             Contact Sales
             <!-- Btn-->
           </button>
-                    </a>
-                    <a target="_blank">
-                        <button class="loginbutton">
+        </a>
+        <a target="_blank">
+          <button class="loginbutton">
             Log In
             <!-- Btn-->
           </button>
-                    </a>
-                    <a target="_blank">
-                        <button class="button">
+        </a>
+        <a target="_blank">
+          <button
+            class="button"
+            >
             Start free trial
             <!-- Btn-->
           </button>
-                    </a>
-                </div>
-            </ul>
-        </div>
-    </nav>
+        </a>
+      </div>
+    </ul>
+  </div>
+</nav>
 
     <!--Fixed Header-->
     <!--        Start of Banner Section-->
     <section class="Recycling_banner box">
-        <div class="row">
-            <div class="col-lg-6 col-12">
-                <img src="img/left-quote (1).png" style="width: 7%; opacity: 0.2;" />
-                <h1 class="Recycling_banner_heading">
-                    Accounting Software built for your operations to help you
-                    <span id="spin"></span>
-                </h1>
-                <br />
-                <div class="box bannerBtns">
-                    <button class="Issue_Feedback_popup_open" onclick="Issue_Feedback_popup();" style="width: 279px;margin-right: 2%;">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <img src="img/left-quote (1).png" style="width: 7%; opacity: 0.2;" />
+          <h1 class="Recycling_banner_heading">
+            Accounting Software built for your operations to help you
+            <span id="spin"></span>
+          </h1>
+          <br />
+          <div class="box bannerBtns">
+            <button
+              class="Issue_Feedback_popup_open"
+              onclick="Issue_Feedback_popup();"
+              style="width: 279px;margin-right: 2%;"
+            >
               Try Demo Account &nbsp; <i class="fas fa-arrow-right"></i>
             </button>
-                    <a target="_blank" class="play btns"><i>Get Started</i></a>
-                </div>
-                <br />
-                <br />
-                <p style="margin-top: 3%;">
-                    No credit card required. Cancel anytime.
-                </p>
-                <div class="box subscribe">
-                    <div class="discount_banner"></div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-12">
-                <div class="workVideo box" style="background: #dfe4df; width: 103%; height: 87%; border-radius: 6px;">
-                    <iframe width="100%" height="390" src="https://www.youtube.com/embed/BjroXdLRkHs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
+            <a target="_blank" class="play btns"><i>Get Started</i></a>
+          </div>
+          <br />
+          <br />
+          <p style="margin-top: 3%;">
+            No credit card required. Cancel anytime.
+          </p>
+          <div class="box subscribe">
+            <div class="discount_banner"></div>
+          </div>
         </div>
+        <div class="col-lg-6 col-12">
+          <div
+            class="workVideo box"
+            style="background: #dfe4df; width: 103%; height: 87%; border-radius: 6px;"
+          >
+            <iframe
+              width="100%"
+              height="390"
+              src="https://www.youtube.com/embed/BjroXdLRkHs?controls=0"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </section>
 
 
 
-    <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-top: 56px; margin-bottom: 56px;">
-        <h1>One Tool, Many Uses</h1>
-        <p>
-            From Recycling to Manaufactuing to Distribution to Sales, tulsi has got you covered. <br /> Select your business below to see how Tulsi can help you increase profits.
-        </p>
+    <div
+      class="newsHead heading box"
+      style="text-align: center; font-size: 17px; margin-top: 56px; margin-bottom: 56px;"
+    >
+      <h1>One Tool, Many Uses</h1>
+      <p>
+        From Recycling to Manaufactuing to Distribution to Sales, tulsi has got
+        you covered. <br />
+        Select your business below to see how Tulsi can help you increase
+        profits.
+      </p>
     </div>
 
     <!--network token start-->
     <section class="indussystem_section box" style="box-shadow: none;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-12 crypto" id="netLeft">
-                    <div class="right box row indussystem_grid">
-                        <br />
-                        <a class="industrybtns">
-                            <img src="img/processing.png" class="ecofeatures_image" />
-                            <p class="hovbutton"><span>Recycling</span></p>
-                        </a>
-                        <br />
-                        <a class="industrybtns active">
-                            <img src="img/processing2.png" class="ecofeatures_image" />
-                            <p class="hovbutton"><span>Processing</span></p>
-                        </a>
-                        <br />
-                        <a class="industrybtns">
-                            <img src="img/manufacturing.png" class="ecofeatures_image" />
-                            <p class="hovbutton"><span>Manufacturing</span></p>
-                        </a>
-                        <br />
-                        <a class="industrybtns">
-                            <img src="img/inventory.png" class="ecofeatures_image" />
-                            <p class="hovbutton"><span>Distribution</span></p>
-                        </a>
-                        <br />
-                        <a class="industrybtns">
-                            <img src="img/sales.png" class="ecofeatures_image" />
-                            <p class="hovbutton"><span>Sales</span></p>
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 crypto" id="netLeft">
+            <div
+              class="right box row indussystem_grid"
+            >
+              <br />
+              <a class="industrybtns">
+                <img src="img/processing.png" class="ecofeatures_image" />
+                <p class="hovbutton"><span>Recycling</span></p>
+              </a>
+              <br />
+              <a class="industrybtns active">
+                <img src="img/processing2.png" class="ecofeatures_image" />
+                <p class="hovbutton"><span>Processing</span></p>
+              </a>
+              <br />
+              <a class="industrybtns">
+                <img src="img/manufacturing.png" class="ecofeatures_image" />
+                <p class="hovbutton"><span>Manufacturing</span></p>
+              </a>
+              <br />
+              <a class="industrybtns">
+                <img src="img/inventory.png" class="ecofeatures_image" />
+                <p class="hovbutton"><span>Distribution</span></p>
+              </a>
+              <br />
+              <a class="industrybtns">
+                <img src="img/sales.png" class="ecofeatures_image" />
+                <p class="hovbutton"><span>Sales</span></p>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <br />
     <br />
-    <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-bottom: 56px; margin-top: 56px;">
-        <h1>Power up your <u>Processing Business</u></h1>
-        <p>
-            From Recycling to Manaufactuing to Distribution to Sales, tulsi has got you covered.
-        </p>
+    <div
+      class="newsHead heading box"
+      style="text-align: center; font-size: 17px; margin-bottom: 56px; margin-top: 56px;"
+    >
+      <h1>Power up your <u>Processing Business</u></h1>
+      <p>
+        From Recycling to Manaufactuing to Distribution to Sales, tulsi has got
+        you covered.
+      </p>
     </div>
     <div style="margin: 8%;">
-        <div class="tab tab_links_btns">
-            <button class="tablinks" onclick="openCity(event, 'Purchases')" id="defaultOpen">
+      <div class="tab tab_links_btns">
+        <button
+          class="tablinks"
+          onclick="openCity(event, 'Purchases')"
+          id="defaultOpen"
+        >
           <img
             src="img/purchasing.png"
             style="vertical-align: -22px; margin: 0% 4%; width: 67px; margin-bottom: 1%;"
           />Purchases
         </button>
-            <button class="tablinks" onclick="openCity(event, 'WeightLogging')">
+        <button class="tablinks" onclick="openCity(event, 'WeightLogging')">
           <img
             src="img/packing.png"
             style="vertical-align: -21px; margin: 0% 2%; width: 62px;"
           />Weight Logging
         </button>
-            <button class="tablinks" onclick="openCity(event, 'Inventory')">
+        <button class="tablinks" onclick="openCity(event, 'Inventory')">
           <img
             src="img/realtimeinvent.png"
             style="vertical-align: -14px;margin: 0% 4%;width: 46px;"
           />Inventory
         </button>
-            <button class="tablinks" onclick="openCity(event, 'Shipping')">
+        <button class="tablinks" onclick="openCity(event, 'Shipping')">
           <img
             src="img/shipping.png"
             style="vertical-align: -21px; margin: 0% 4%; width: 60px;"
           />Shipping
         </button>
-            <button class="tablinks" onclick="openCity(event, 'Reports')">
+        <button class="tablinks" onclick="openCity(event, 'Reports')">
           <img
             src="img/gantt.png"
             style="vertical-align: -16px; margin: 0% 4%; width: 52px;"
           />Reports
         </button>
-        </div>
-        <div id="Purchases" class="tabcontent">
-            <section class="green_banner_area box" style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8" id="netRight">
-                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
-                                <div class="wrap-two-up wrap-two-up-middle">
-                                    <div class="content content-two-up">
-                                        <div class="open-dev-radar">
-                                            <div class="open-dev-badge">
-                                                <img src="img/produce_step1.png" style="width: 45pc;" class="open-dev-badge_img" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+      </div>
+      <div id="Purchases" class="tabcontent">
+        <section
+          class="green_banner_area box"
+          style="background: #fff;margin-bottom: 4%; margin-top: 0%;"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8" id="netRight">
+                <section
+                  id="open-dev"
+                  class="wrap-content open-dev"
+                  style="margin-top: 225px;"
+                >
+                  <div class="wrap-two-up wrap-two-up-middle">
+                    <div class="content content-two-up">
+                      <div class="open-dev-radar">
+                        <div class="open-dev-badge">
+                          <img
+                            src="img/produce_step1.png"
+                            style="width: 45pc;"
+                            class="open-dev-badge_img"
+                          />
                         </div>
-                        <div class="col-sm-4 crypto" id="netLeft">
-                            <div class="right box">
-                                <h4 class="tulsi_app_badge"><b>Purchases</b></h4>
-                                <br />
-                                <h1 style="color:#333;">Deploy any purchasing methods</h1>
-                                <br />
-                                <p>
-                                    Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.
-                                </p>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-lg-4 crypto open-dev-badge_img_text" id="netLeft">
+                <div class="right box">
+                  <h4 class="tulsi_app_badge"><b>Purchases</b></h4>
+                  <br />
+                  <h1 style="color:#333;">Deploy any purchasing methods</h1>
+                  <br />
+                  <p>
+                    Keep tabs on your business no matter where you are. With the
+                    FreshBooks mobile app, you can capture your expenses, send
+                    invoices and know the moment you get paid, all from the palm
+                    of your hand.
+                  </p>
                 </div>
-            </section>
-        </div>
-        <div id="WeightLogging" class="tabcontent">
-            <!--Weight Logging Feature Steps 2-->
-            <section class="green_banner_area box" style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8" id="netRight">
-                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
-                                <div class="wrap-two-up wrap-two-up-middle">
-                                    <div class="content content-two-up">
-                                        <div class="open-dev-radar">
-                                            <div class="open-dev-badge">
-                                                <img src="img/produce_step2.png" style="width: 45pc;" class="open-dev-badge_img" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="WeightLogging" class="tabcontent">
+        <!--Weight Logging Feature Steps 2-->
+        <section
+          class="green_banner_area box"
+          style="background: #fff;margin-bottom: 4%; margin-top: 0%;"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8" id="netRight">
+                <section
+                  id="open-dev"
+                  class="wrap-content open-dev"
+                  style="margin-top: 225px;"
+                >
+                  <div class="wrap-two-up wrap-two-up-middle">
+                    <div class="content content-two-up">
+                      <div class="open-dev-radar">
+                        <div class="open-dev-badge">
+                          <img
+                            src="img/produce_step2.png"
+                            style="width: 45pc;"
+                            class="open-dev-badge_img"
+                          />
                         </div>
-                        <div class="col-sm-4 crypto" id="netLeft">
-                            <div class="right box">
-                                <h4 class="tulsi_app_badge"><b>Weight Logging</b></h4>
-                                <br />
-                                <h1 style="color:#333;">
-                                    Efficiently logging harvested everyday
-                                </h1>
-                                <br />
-                                <p>
-                                    Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.
-                                </p>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-sm-4 crypto" id="netLeft">
+                <div class="right box">
+                  <h4 class="tulsi_app_badge"><b>Weight Logging</b></h4>
+                  <br />
+                  <h1 style="color:#333;">
+                    Efficiently logging harvested everyday
+                  </h1>
+                  <br />
+                  <p>
+                    Keep tabs on your business no matter where you are. With the
+                    FreshBooks mobile app, you can capture your expenses, send
+                    invoices and know the moment you get paid, all from the palm
+                    of your hand.
+                  </p>
                 </div>
-            </section>
-            <!--Weight Logging Feature Steps 2-->
-        </div>
-        <div id="Inventory" class="tabcontent">
-            <!--Inventory Feature Steps 3-->
-            <section class="green_banner_area box" style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8" id="netRight">
-                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;" class="open-dev-badge_img">
-                                <div class="wrap-two-up wrap-two-up-middle">
-                                    <div class="content content-two-up">
-                                        <div class="open-dev-radar">
-                                            <div class="open-dev-badge">
-                                                <img src="img/inventory_step3.png" style="width: 45pc;" class="open-dev-badge_img" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Weight Logging Feature Steps 2-->
+      </div>
+      <div id="Inventory" class="tabcontent">
+        <!--Inventory Feature Steps 3-->
+        <section
+          class="green_banner_area box"
+          style="background: #fff;margin-bottom: 4%; margin-top: 0%;"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8" id="netRight">
+                <section
+                  id="open-dev"
+                  class="wrap-content open-dev"
+                  style="margin-top: 225px;"
+                  class="open-dev-badge_img"
+                >
+                  <div class="wrap-two-up wrap-two-up-middle">
+                    <div class="content content-two-up">
+                      <div class="open-dev-radar">
+                        <div class="open-dev-badge">
+                          <img
+                            src="img/inventory_step3.png"
+                            style="width: 45pc;"
+                            class="open-dev-badge_img"
+                          />
                         </div>
-                        <div class="col-sm-4 crypto" id="netLeft">
-                            <div class="right box">
-                                <h4 class="tulsi_app_badge"><b>Inventory</b></h4>
-                                <br />
-                                <h1 style="color:#333;">Manage stocks at granular levels</h1>
-                                <br />
-                                <p>
-                                    Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.
-                                </p>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-sm-4 crypto" id="netLeft">
+                <div class="right box">
+                  <h4 class="tulsi_app_badge"><b>Inventory</b></h4>
+                  <br />
+                  <h1 style="color:#333;">Manage stocks at granular levels</h1>
+                  <br />
+                  <p>
+                    Keep tabs on your business no matter where you are. With the
+                    FreshBooks mobile app, you can capture your expenses, send
+                    invoices and know the moment you get paid, all from the palm
+                    of your hand.
+                  </p>
                 </div>
-            </section>
-            <!--Inventory Feature Steps 3-->
-        </div>
-        <div id="Shipping" class="tabcontent">
-            <!--Shipping Feature Steps 4-->
-            <section class="green_banner_area box" style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8" id="netRight">
-                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;" class="open-dev-badge_img">
-                                <div class="wrap-two-up wrap-two-up-middle">
-                                    <div class="content content-two-up">
-                                        <div class="open-dev-radar">
-                                            <div class="open-dev-badge">
-                                                <img src="img/shipment_step4.png" style="width: 45pc;" class="open-dev-badge_img" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Inventory Feature Steps 3-->
+      </div>
+      <div id="Shipping" class="tabcontent">
+        <!--Shipping Feature Steps 4-->
+        <section
+          class="green_banner_area box"
+          style="background: #fff;margin-bottom: 4%; margin-top: 0%;"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8" id="netRight">
+                <section
+                  id="open-dev"
+                  class="wrap-content open-dev"
+                  style="margin-top: 225px;"
+                  class="open-dev-badge_img"
+                >
+                  <div class="wrap-two-up wrap-two-up-middle">
+                    <div class="content content-two-up">
+                      <div class="open-dev-radar">
+                        <div class="open-dev-badge">
+                          <img
+                            src="img/shipment_step4.png"
+                            style="width: 45pc;"
+                            class="open-dev-badge_img"
+                          />
                         </div>
-                        <div class="col-sm-4 crypto" id="netLeft">
-                            <div class="right box">
-                                <h4 class="tulsi_app_badge"><b>Shipping</b></h4>
-                                <br />
-                                <h1 style="color:#333;">Ship goods to your clients</h1>
-                                <br />
-                                <p>
-                                    Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.
-                                </p>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-sm-4 crypto" id="netLeft">
+                <div class="right box">
+                  <h4 class="tulsi_app_badge"><b>Shipping</b></h4>
+                  <br />
+                  <h1 style="color:#333;">Ship goods to your clients</h1>
+                  <br />
+                  <p>
+                    Keep tabs on your business no matter where you are. With the
+                    FreshBooks mobile app, you can capture your expenses, send
+                    invoices and know the moment you get paid, all from the palm
+                    of your hand.
+                  </p>
                 </div>
-            </section>
-            <!--Shipping Feature Steps 4-->
-        </div>
-        <div id="Reports" class="tabcontent">
-            <!--Report Feature Steps 5-->
-            <section class="green_banner_area box" style="background: #fff;margin-bottom: 4%; margin-top: 0%;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8" id="netRight">
-                            <section id="open-dev" class="wrap-content open-dev" style="margin-top: 225px;">
-                                <div class="wrap-two-up wrap-two-up-middle">
-                                    <div class="content content-two-up">
-                                        <div class="open-dev-radar">
-                                            <div class="open-dev-badge">
-                                                <img src="img/reports_step5.png" style="width: 42pc;" class="open-dev-badge_img" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Shipping Feature Steps 4-->
+      </div>
+      <div id="Reports" class="tabcontent">
+        <!--Report Feature Steps 5-->
+        <section
+          class="green_banner_area box"
+          style="background: #fff;margin-bottom: 4%; margin-top: 0%;"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8" id="netRight">
+                <section
+                  id="open-dev"
+                  class="wrap-content open-dev"
+                  style="margin-top: 225px;"
+                >
+                  <div class="wrap-two-up wrap-two-up-middle">
+                    <div class="content content-two-up">
+                      <div class="open-dev-radar">
+                        <div class="open-dev-badge">
+                          <img
+                            src="img/reports_step5.png"
+                            style="width: 42pc;"
+                            class="open-dev-badge_img"
+                          />
                         </div>
-                        <div class="col-sm-4  crypto" id="netLeft">
-                            <div class="right box">
-                                <h4 class="tulsi_app_badge"><b>Reporting</b></h4>
-                                <br />
-                                <h1 style="color:#333;">
-                                    Analyse your business on new levels
-                                </h1>
-                                <br />
-                                <p>
-                                    Keep tabs on your business no matter where you are. With the FreshBooks mobile app, you can capture your expenses, send invoices and know the moment you get paid, all from the palm of your hand.
-                                </p>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-sm-4  crypto" id="netLeft">
+                <div class="right box">
+                  <h4 class="tulsi_app_badge"><b>Reporting</b></h4>
+                  <br />
+                  <h1 style="color:#333;">
+                    Analyse your business on new levels
+                  </h1>
+                  <br />
+                  <p>
+                    Keep tabs on your business no matter where you are. With the
+                    FreshBooks mobile app, you can capture your expenses, send
+                    invoices and know the moment you get paid, all from the palm
+                    of your hand.
+                  </p>
                 </div>
-            </section>
-            <!--Report Feature Steps 5-->
-        </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Report Feature Steps 5-->
+      </div>
     </div>
 
     <!--        End of Banner Section-->
-    <div class="newsHead heading box" style="text-align: center; font-size: 17px; margin-top: 56px; margin-bottom: 56px;">
-        <h1>
-            <b style="border-bottom: 9px solid #83827f; background: #fff8e2; padding: 0px 14px;">Data is gold</b
+    <div
+      class="newsHead heading box"
+      style="text-align: center; font-size: 17px; margin-top: 56px; margin-bottom: 56px;"
+    >
+      <h1>
+        <b
+          style="border-bottom: 9px solid #83827f; background: #fff8e2; padding: 0px 14px;"
+          >Data is gold</b
         >, Integration with our <u>platform partners.</u>
       </h1>
     </div>
