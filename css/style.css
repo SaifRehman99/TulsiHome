@@ -7066,12 +7066,12 @@ button {
 }
 @media screen and (max-width: 400px) {
     .footer {
-        height: 177vh !important;
+        height: 182vh !important;
     }
 }
 @media screen and (max-width: 320px) {
     .footer {
-        height: 199vh !important;
+        height: 203vh !important;
         width: 109%;
     }
 }
