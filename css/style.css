@@ -7024,43 +7024,55 @@ button {
     font-family: "Poppins-Regular";
     line-height: 59px;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .footer {
+        height: 88vh !important;
+        width: 102%
+    }
+}
 @media screen and (max-width: 860px) {
     .footer {
-        /* height: 130vh; */
-        height: 127vh !important;
+        height: 178vh !important;
     }
 }
 @media screen and (max-width: 830px) {
     .footer {
         /* height: 130vh; */
-        height: 63vh;
+        height: 63vh !important;
+    }
+}
+@media screen and (max-width: 800px) {
+    .footer {
+        /* height: 130vh; */
+        height: 122vh !important;
     }
 }
 @media screen and (max-width: 750px) {
     .footer {
-        /* height: 130vh; */
-        height: 100vh;
+        height: 144vh !important;
+        width: 103%;
     }
 }
 @media screen and (max-width: 600px) {
     .footer {
-        height: 163vh;
+        height: 146vh !important;
+        width: 105%;
     }
 }
 @media screen and (max-width: 480px) {
     .footer {
-        /* height: 130vh; */
-        height: 106vh;
+        height: 148vh !important;
     }
 }
 @media screen and (max-width: 400px) {
     .footer {
-        height: 181vh;
+        height: 177vh !important;
     }
 }
 @media screen and (max-width: 320px) {
     .footer {
-        height: 207vh !important;
+        height: 199vh !important;
+        width: 109%;
     }
 }
 @media screen and (max-width: 220px) {
